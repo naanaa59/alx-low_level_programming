@@ -16,8 +16,11 @@ int main(void)
 			{
 				putchar(digit1);
 				putchar(digit2);
-				putchar(44);
-				putchar(32);
+				if ( digit1 < 56  && digit2 < 58)
+				{
+					putchar(44);
+					putchar(32);
+				}
 			}
 		}
 	}
