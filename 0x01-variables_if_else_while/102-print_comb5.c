@@ -1,12 +1,14 @@
 #include <stdio.h>
+
 /**
- * main - Display two of two-digits
- * Return: 0
+ * main - prints all combinations
+ *	of two two digits
+ * Return: 0 (Success)
  */
+
 int main(void)
 {
-	int d1;
-	int d2;
+	int d1, d2;
 
 	d1 = 0;
 	while (d1 <= 99)
@@ -14,7 +16,7 @@ int main(void)
 		d2 = 0;
 		while (d2 <= 99)
 		{
-			if (d1 < d2 && d1 == d2)
+			if (d1 < d2 && d1 != d2)
 			{
 				putchar((d1 / 10) + '0');
 				putchar((d1 % 10) + '0');
@@ -26,9 +28,9 @@ int main(void)
 				putchar(',');
 				putchar(' ');
 			}
-			d1++;
+			d2++;
 		}
-		d2++;
+		d1++;
 	}
 	putchar('\n');
 	return (0);
