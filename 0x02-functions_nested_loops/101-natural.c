@@ -4,6 +4,7 @@
 /**
  *sum_of_multiples - returns sum of multiples of 3 and 5 belox 1024 excluded
  *
+ *
 */
 void sum_of_multiples(void)
 {
