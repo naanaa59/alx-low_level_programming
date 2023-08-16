@@ -1,5 +1,13 @@
 #include "main.h"
-
+/**
+ *print_spaces - prints comman and 2 spaces
+ */
+void print_spaces(void)
+{
+	_putchar(',');
+	_putchar(' ');
+	_putchar(' ');
+}
 /**
  *times_table - prints the 9 times tables
  */
@@ -23,20 +31,14 @@ void times_table(void)
 					_putchar(d2 + '0');
 					if (j == 9)
 						break;
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
+					print_spaces();
 				}
 				else if (j == 0 && dd == 0)
-				{
 					_putchar(d2 + '0');
-				}
-				else 
+				else
 				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-					_putchar(d2 +'0');
+					print_spaces();
+					_putchar(d2 + '0');
 				}
 			}
 			else if (dd >= 10)
