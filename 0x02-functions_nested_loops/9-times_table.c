@@ -18,14 +18,25 @@ void times_table(void)
 			d2 = dd % 10;
 			if (dd < 10)
 			{
-				if (dd == 0)
+				if (i == 0 && dd == 0)
+				{
 					_putchar(d2 + '0');
-				else
+					if (j == 9)
+						break;
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+				}
+				else if (j == 0 && dd == 0)
+				{
+					_putchar(d2 + '0');
+				}
+				else 
 				{
 					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
-					_putchar(d2 + '0');
+					_putchar(d2 +'0');
 				}
 			}
 			else if (dd >= 10)
