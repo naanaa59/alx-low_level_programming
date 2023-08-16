@@ -16,14 +16,17 @@ void times_table(void)
 			dd = i * j;
 			d1 = dd / 10;
 			d2 = dd % 10;
-			if (i == 0)
-				_putchar(d2 + '0');
-			else if (dd < 10)
+			if (dd < 10)
 			{
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
-				_putchar(d2 + '0');
+				if (dd == 0)
+					_putchar(d2 + '0');
+				else
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(d2 + '0');
+				}
 			}
 			else if (dd >= 10)
 			{
