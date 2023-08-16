@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- *sum_of_multiples - returns sum of multiples of 3 and 5 belox 1024 excluded
+ *main  - entry point 
  *
  *
 */
-void sum_of_multiples(void)
+int main(void)
 {
 	int i = 0, sum;
 
@@ -18,4 +18,5 @@ void sum_of_multiples(void)
 	i++;
 	}
 	printf("%d\n", sum);
+	return (0);
 }
