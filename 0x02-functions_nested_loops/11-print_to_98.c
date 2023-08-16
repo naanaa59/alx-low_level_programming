@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- *print_to_98 - prints all natural numbers from n to 98
  *pr_digit - prints any int
- *@n: the given number
+ *Description: print any int
+ *@n: int
  */
 void pr_digit(int n)
 {
@@ -21,7 +21,7 @@ void pr_digit(int n)
 		_putchar(d2 + '0');
 		_putchar(d3 + '0');
 	}
-	else if (n < 9 && n >= 0)
+	else if (n <= 9 && n >= 0)
 		_putchar(n + '0');
 	else if (n >= -9 && n < 0)
 	{
@@ -42,6 +42,11 @@ void pr_digit(int n)
 		_putchar(d3 + '0');
 	}
 }
+/**
+  *print_to_98 - prints from n to 98
+  *
+  *@n: int
+  */
 void print_to_98(int n)
 {
 	while (n <= 98)
