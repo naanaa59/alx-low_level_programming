@@ -17,10 +17,8 @@ void more_numbers(void)
 			if (n > 9)
 			{
 				_putchar(d1 + '0');
-				_putchar(d2 + '0');
 			}
-			else
-				_putchar(d2 + '0');
+			_putchar(d2 + '0');
 		}
 		_putchar('\n');
 	}
