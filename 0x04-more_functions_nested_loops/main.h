@@ -1,4 +1,5 @@
 int _putchar(char c);
+void _print_2_digits(int n);
 int _isupper(int c);
 int _isdigit(int c);
 int mul(int a, int b);
