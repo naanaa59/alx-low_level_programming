@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * _strlen - returns the length of a string.
  *
@@ -25,17 +26,11 @@ int _strlen(char *s)
 void print_rev(char *s)
 {
 	int i, l;
-	char r_str[100];
 
 	l = _strlen(s);
-	for (i = 0; i < l ; i++)
+	for (i = l - 1; i >= 0 ; i--)
 	{
-		r_str[l - 1 - i] = s[i];
+		_putchar(s[i]);
 	}
-	for (i = 0; r_str[i] != 0; i++)
-	{
-		_putchar(r_str[i]);
-	}
-
 	_putchar('\n');
 }
