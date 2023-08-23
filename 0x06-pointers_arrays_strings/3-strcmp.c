@@ -13,19 +13,18 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	int ls1, ls2, flag;
+	int i;
 
-	for (ls1 = 0; s1[ls1];)
-		ls1++;
-	for (ls2 = 0; s2[ls2];)
-		ls2++;
-	if (ls1 < ls2)
-		flag = -15;
-	else if (ls1 == ls2)
-		flag = 0;
-	else
-		flag = 15;
-	return (flag);
+	for (i  = 0; s1[i] && s2[i]; i++)
+	{
+		if (s1[i] == s2[i])
+			continue;
+		else
+			break;
+
+	}
+
+		return (s1[i] - s2[i]);
 }
 
 
