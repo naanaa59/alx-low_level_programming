@@ -14,32 +14,32 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-        int l_src, l_dest, i;
+	int l_src, l_dest, i;
 
-        for (l_src = 0; src[l_src];)
-        {
-                l_src++;
-        }
-        for (l_dest = 0; dest[l_dest];)
-        {
-                l_dest++;
-        }
-        if (n > l_src)
-        {
-                for (i = 0; i < l_src; i++)
-                {
-                        dest[i] = src[i];
-                }
-        }
-        else
-        {
-                for (i = 0; i < n; i++)
-                {
-                        dest[i] = src[i];
-                }
-        }
+	for (l_src = 0; src[l_src];)
+	{
+		l_src++;
+	}
+	for (l_dest = 0; dest[l_dest];)
+	{
+		l_dest++;
+	}
+	if (n > l_src)
+	{
+		for (i = 0; i < l_src; i++)
+		{
+			dest[i] = src[i];
+		}
+	}
+	else
+	{
+		for (i = 0; i < n; i++)
+		{
+			dest[i] = src[i];
+		}
+	}
 	for (; i < n; i++)
-        dest[i] = '\0';
-        return (dest);
+		dest[i] = '\0';
+	return (dest);
 
 }
