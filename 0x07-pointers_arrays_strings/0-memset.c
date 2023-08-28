@@ -7,6 +7,8 @@
  * @b: the constant byte
  *
  * @n: the first n bytes to fill
+ *
+ * Return: the given s modified by the function
  */
 char *_memset(char *s, char b, unsigned int n)
 {
