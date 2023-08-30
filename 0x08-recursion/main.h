@@ -1,9 +1,11 @@
 int _putchar(char c);
-int _sqrt_helper(int n, int original);
 void _puts_recursion(char *s);
 void _print_rev_recursion(char *s);
 int _strlen_recursion(char *s);
 int factorial(int n);
 int _pow_recursion(int x, int y);
+int _sqrt_helper(int n, int guess, int original);
 int _sqrt_recursion(int n);
+int is_prime_number_helper(int n, int divisor);
 int is_prime_number(int n);
+int wildcmp(char *s1, char *s2);
