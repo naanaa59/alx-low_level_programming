@@ -19,11 +19,13 @@ char **strtow(char *str)
 	char **words;
 	int length = 0;
 
-	if (str == NULL || *str == '\0' || *str == ' ')
+	if (str == NULL || *str == '\0')
 	{
 		return (NULL);
 	}
 	word_count = count_words(str);
+	if (word_count == 0)
+		return (NULL);
 	words = malloc((word_count + 1) * sizeof(char *));
 	if (words == NULL)
 	{
