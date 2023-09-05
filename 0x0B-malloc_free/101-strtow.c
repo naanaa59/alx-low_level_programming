@@ -19,7 +19,7 @@ char **strtow(char *str)
 	char **words;
 	int length = 0;
 
-	if (str == NULL || *str == '\0' || (*str == ' ' && *(str + 1) == '\0'))
+	if (str == NULL || *str == '\0' || *str == ' ')
 	{
 		return (NULL);
 	}
