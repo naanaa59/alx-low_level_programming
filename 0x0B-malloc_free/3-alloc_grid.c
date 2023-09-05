@@ -6,7 +6,7 @@
  *
  * @width: width of the 2D array
  *
- * @height: height of the 2D array
+ * @height: height of the 2D arra
  *
  * Return: a pointer to the 2D array
  */
