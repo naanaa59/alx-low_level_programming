@@ -20,6 +20,5 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	a = malloc(nmemb * size);
 	if (a == NULL)
 		return (NULL);
-	memset(a, 0, size);
 	return (a);
 }
