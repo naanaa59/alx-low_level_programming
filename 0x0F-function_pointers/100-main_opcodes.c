@@ -10,15 +10,11 @@
  *
  * Return: 0
  */
-void main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int num_bytes, i;
 	unsigned char *mainPtr = (unsigned char *)main;
 
-	if (main == NULL)
-		return;
-	if (mainPtr == NULL)
-		return;
 	if (argc != 2)
 	{
 		printf("Error\n");
@@ -33,5 +29,6 @@ void main(int argc, char *argv[])
 	for (i = 0; i < num_bytes; i++)
 		printf("%02x ", mainPtr[i]);
 	printf("\n");
+	return (0);
 
 }
