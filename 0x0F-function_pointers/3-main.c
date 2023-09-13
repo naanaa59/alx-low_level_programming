@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 	if (f == NULL)
 	{
 		printf("Error\n");
-		exit(98);
+		exit(99);
 	}
 
 	result = f(a, b);
