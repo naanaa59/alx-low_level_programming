@@ -15,6 +15,10 @@ int main(int argc, char *argv[])
 	int num_bytes, i;
 	unsigned char *mainPtr = (unsigned char *)main;
 
+	if (main == NULL)
+		return (0);
+	if (mainPtr == NULL)
+		return (0);
 	if (argc != 2)
 	{
 		printf("Error\n");
