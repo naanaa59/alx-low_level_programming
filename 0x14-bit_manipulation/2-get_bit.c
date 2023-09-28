@@ -13,16 +13,8 @@
 int get_bit(unsigned long int n, unsigned int index)
 {
 	int bit;
-	unsigned int num_bits = 0;
-	unsigned long int tmp = n;
 
-	while (tmp > 0)
-	{
-		num_bits++;
-		tmp = tmp >> 1;
-	}
-
-	if (index >= num_bits || index > 64)
+	if (index >= (sizeof(n) * 8))
 		return (-1);
 
 	bit = (n >> index) & 1;
