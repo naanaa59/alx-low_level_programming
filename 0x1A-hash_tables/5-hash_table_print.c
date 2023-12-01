@@ -21,10 +21,13 @@ void hash_table_print(const hash_table_t *ht)
 
 			while (current)
 			{
-				if (!flag_first)
-					printf(", ");
-				printf("'%s': '%s'", current->key, current->value);
-				flag_first = 0;
+				if (current->key && current->value)
+				{
+					if (!flag_first)
+						printf(", ");
+					printf("'%s': '%s'", current->key, current->value);
+					flag_first = 0;
+				}
 				current = current->next;
 			}
 		}
