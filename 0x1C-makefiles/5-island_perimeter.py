@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    This script returns perimeter of grid with :
+    this script returns perimeter of grid with :
         grid is a list of list of integers:
             0 represents a water zone
             1 represents a land zone
