@@ -19,16 +19,18 @@ def island_perimeter(grid):
         calculates the perimeters
     """
     perimeter_grid = 0
+    grid_size = len(grid)
+    row_size = len(grid[grid_size - 1])
 
-    for i in range(len(grid)):
-        for j in range(len(grid[i])):
+    for i in range(grid_size):
+        for j in range(row_size):
             if grid[i][j] == 1:
-                if grid[i][j-1] == 0:
+                if grid[i][j-1] == 0 and j > 0:
                     perimeter_grid += 1
-                if grid[i][j+1] == 0:
+                if grid[i][j+1] == 0 and j < row_size:
                     perimeter_grid += 1
-                if grid[i-1][j] == 0:
+                if grid[i-1][j] == 0 and i > 0:
                     perimeter_grid += 1
-                if grid[i+1][j] == 0:
+                if grid[i+1][j] == 0 and i < row_size:
                     perimeter_grid = perimeter_grid + 1
     return perimeter_grid
