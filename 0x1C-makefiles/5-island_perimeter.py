@@ -27,10 +27,10 @@ def island_perimeter(grid):
             if grid[i][j] == 1:
                 if grid[i][j-1] == 0 and j > 0:
                     perimeter_grid += 1
-                if grid[i][j+1] == 0 and j < row_size:
+                if j + 1 < row_size and grid[i][j+1] == 0:
                     perimeter_grid += 1
                 if grid[i-1][j] == 0 and i > 0:
                     perimeter_grid += 1
-                if grid[i+1][j] == 0 and i < row_size:
+                if i + 1 < grid_size and grid[i+1][j] == 0:
                     perimeter_grid = perimeter_grid + 1
     return perimeter_grid
