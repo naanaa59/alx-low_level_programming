@@ -15,6 +15,9 @@
 
 
 def island_perimeter(grid):
+    """
+        calculates the perimeters
+    """
     perimeter_grid = 0
 
     for i in range(len(grid)):
